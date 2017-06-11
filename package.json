@@ -1,0 +1,38 @@
+{
+  "name": "react-redux-react-router-snippets",
+  "description": "Code snippets for Reactjs development in ES6 syntax",
+  "version": "0.1.0",
+  "displayName": "React/Redux/react-router Snippets",
+  "publisher": "discountry",
+  "icon": "images/react.png",
+  "galleryBanner": {
+    "theme": "light"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/discountry/vscode-react-redux-react-router-snippets"
+  },
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+	  {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+	  },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "jsx",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
