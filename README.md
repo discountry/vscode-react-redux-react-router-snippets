@@ -112,5 +112,5 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 
 ## License
 
-[LICENSE](LICENSE)
+[MIT](LICENSE)
 
