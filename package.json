@@ -1,7 +1,7 @@
 {
   "name": "react-redux-react-router-snippets",
   "description": "Code snippets for Reactjs development in ES6 syntax",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "displayName": "React/Redux/react-router Snippets",
   "publisher": "discountry",
   "icon": "images/react.png",
