@@ -1,8 +1,16 @@
 # React/Redux/react-router Snippets
 
-> Extends from [Reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets).
+Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstudio.com/), including:
 
-## import
+* Quick import
+* React
+* Redux
+* react-redux
+* react-router
+
+## Usage
+
+### import
 
 | Trigger  | Content |
 | -------: | ------- |
@@ -12,7 +20,7 @@
 | `imc`    | `import ${1:componentName} from './Components/${1:componentName}';` |
 | `imrr`   | `import { BrowserRouter, Route } from 'react-router-dom';` |
 
-## React
+### React
 
 | Trigger  | Content |
 | -------: | ------- |
@@ -68,7 +76,7 @@
 | `ptsh→`  | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),` |
 | `ptshr→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |
 
-## Redux
+### Redux
 
 | Trigger  | Content |
 | -------: | ------- |
@@ -78,7 +86,7 @@
 | `store`  | Redux store |
 | `selector`  | Redux selector |
 
-## react-redux
+### react-redux
 
 | Trigger  | Content |
 | -------: | ------- |
@@ -89,9 +97,20 @@
 | `mdtp`  | mapDispatchToProps |
 | `connect`  | react-redux connect React Component |
 
-## react-router
+### react-router
 
 | Trigger  | Content |
 | -------: | ------- |
 | `rrr`  | `<Router><Route /></Router>` |
+
+## Acknowledgments
+
+* [Reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
+* [React-Native/React/Redux snippets for es6/es7](https://marketplace.visualstudio.com/items?itemName=EQuimper.react-native-react-redux)
+* [React Redux ES6 Snippets](https://marketplace.visualstudio.com/items?itemName=timothymclane.react-redux-es6-snippets)
+* [redux-snippets](https://marketplace.visualstudio.com/items?itemName=jameshrisho.redux-snippets)
+
+## License
+
+[LICENSE](LICENSE)
 
