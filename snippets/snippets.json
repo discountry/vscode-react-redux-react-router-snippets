@@ -367,7 +367,7 @@
         "\treturn {",
         "\t\t${propName}: () => {",
         "\t\t\tdispatch(${value}(ownProps))",
-        "\t\t};",
+        "\t\t}",
         "\t};",
         "};",
         "const ${containerName} = connect(",
