@@ -305,7 +305,7 @@
       "export const ${actionCreator} = (${payload}) => ({",
       "\ttype: ${actionType},",
       "\t${payload}",
-      "})"
+      "});"
     ]
   },
   "Redux Reducer": {
@@ -314,7 +314,7 @@
       "export const ${1:reducerName} = (state = $2, action) => {",
       "\tswitch (action.type) {",
       "\t\tcase $3:",
-      "\t\t\t$4",
+      "\t\t\treturn $4;",
       "\t\tdefault:",
       "\t\t\treturn state;",
       "\t}",
@@ -354,28 +354,28 @@
   "container": {
     "prefix": "container",
     "body": [
-        "import { connect } from 'react-redux'",
-        "import ${component} from '${path}'",
+        "import { connect } from 'react-redux';",
+        "import ${component} from '${path}';",
         "",
         "const mapStateToProps = (state, ownProps) => {",
         "\treturn {",
         "\t\t${propName}: ${prop}",
-        "\t}",
-        "}",
+        "\t};",
+        "};",
         "",
         "const mapDispatchToProps = (dispatch) => {",
         "\treturn {",
         "\t\t${propName}: () => {",
         "\t\t\tdispatch(${value}(ownProps))",
-        "\t\t}",
-        "\t}",
-        "}",
+        "\t\t};",
+        "\t};",
+        "};",
         "const ${containerName} = connect(",
         "\t${mapStateToProps,}",
         "\t${mapDispatchToProps}",
-        ")(${component})",
+        ")(${component});",
         "",
-        "export default ${containerName}"
+        "export default ${containerName};"
     ],
     "description" : "Redux container"
   },
@@ -401,9 +401,9 @@
     "body": [
       "const mapDispatchToProps = (dispatch) => ({",
       "\t${1:propName}: (${2:params}) => {",
-      "\t\tdispatch(${3:actionCreator}(${2:params}))",
-      "\t}",
-      "})"
+      "\t\tdispatch(${3:actionCreator}(${2:params}));",
+      "\t};",
+      "});"
     ],
     "description": "react-redux connect mapDispatchToProps const function."
   },
@@ -413,9 +413,9 @@
         "const ${containerName} = connect(",
         "\t${mapStateToProps,}",
         "\t${mapDispatchToProps}",
-        ")(${component})",
+        ")(${component});",
         "",
-        "export default ${containerName}"
+        "export default ${containerName};"
     ],
     "description": "react-redux connect method."
   },
