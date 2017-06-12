@@ -311,7 +311,7 @@
   "Redux Reducer": {
     "prefix": "reducer",
     "body": [
-      "export const ${1:reducerName} (state = $2, action) => {",
+      "export const ${1:reducerName} = (state = $2, action) => {",
       "\tswitch (action.type) {",
       "\t\tcase $3:",
       "\t\t\t$4",
