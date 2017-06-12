@@ -343,7 +343,7 @@
       "\t\t\treturn state.filter(t => $3);",
       "\t\tdefault:",
       "\t\t\treturn state;",
-      "\t};",
+      "\t}",
       "};",
       "",
       "export default ${1:selectorName};"
@@ -429,6 +429,14 @@
       "} from 'react-router-dom';"
     ]
 	},
+  "ES6 react-router NavLink Import": {
+    "prefix": "imnl",
+    "body": "import { NavLink } from 'react-router-dom';"
+  },
+  "ES6 react-router withRouter Import": {
+    "prefix": "imwr",
+    "body": "import { withRouter } from 'react-router';"
+  },
   "react-router Router": {
 		"prefix": "rrr",
 		"body": [
