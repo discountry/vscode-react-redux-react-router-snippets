@@ -402,7 +402,7 @@
       "const mapDispatchToProps = (dispatch) => ({",
       "\t${1:propName}: (${2:params}) => {",
       "\t\tdispatch(${3:actionCreator}(${2:params}));",
-      "\t};",
+      "\t}",
       "});"
     ],
     "description": "react-redux connect mapDispatchToProps const function."
