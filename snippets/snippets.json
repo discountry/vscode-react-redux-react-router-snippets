@@ -351,40 +351,12 @@
     "description": "Redux selector."
   },
   // react-redux
-  "container": {
-    "prefix": "container",
-    "body": [
-        "import { connect } from 'react-redux';",
-        "import ${component} from '${path}';",
-        "",
-        "const mapStateToProps = (state, ownProps) => {",
-        "\treturn {",
-        "\t\t${propName}: ${prop}",
-        "\t};",
-        "};",
-        "",
-        "const mapDispatchToProps = (dispatch) => {",
-        "\treturn {",
-        "\t\t${propName}: () => {",
-        "\t\t\tdispatch(${value}(ownProps))",
-        "\t\t}",
-        "\t};",
-        "};",
-        "const ${containerName} = connect(",
-        "\t${mapStateToProps,}",
-        "\t${mapDispatchToProps}",
-        ")(${component});",
-        "",
-        "export default ${containerName};"
-    ],
-    "description" : "Redux container"
-  },
   "Connect Redux": {
-    "prefix": "crr",
+    "prefix": "imconnect",
     "body": "import { connect } from 'react-redux';"
   },
   "Provider Redux": {
-    "prefix": "provider",
+    "prefix": "improvider",
     "body": "import { Provider } from 'react-redux';"
   },
   "mapStateToProps": {
@@ -419,6 +391,43 @@
     ],
     "description": "react-redux connect method."
   },
+  "provider": {
+    "prefix": "provider",
+    "body": [
+        "<Provider store={store}>",
+        "\t${Component}$0",
+        "</Provider>"
+    ],
+    "description": "react-redux Provider Container."
+  },
+  "container": {
+    "prefix": "container",
+    "body": [
+        "import { connect } from 'react-redux';",
+        "import ${component} from '${path}';",
+        "",
+        "const mapStateToProps = (state, ownProps) => {",
+        "\treturn {",
+        "\t\t${propName}: ${prop}",
+        "\t};",
+        "};",
+        "",
+        "const mapDispatchToProps = (dispatch) => {",
+        "\treturn {",
+        "\t\t${propName}: () => {",
+        "\t\t\tdispatch(${value}(ownProps))",
+        "\t\t}",
+        "\t};",
+        "};",
+        "const ${containerName} = connect(",
+        "\t${mapStateToProps,}",
+        "\t${mapDispatchToProps}",
+        ")(${component});",
+        "",
+        "export default ${containerName};"
+    ],
+    "description" : "Redux container"
+  },
   // react-router
   "ES6 react-router Import": {
 		"prefix": "imrr",
@@ -438,11 +447,19 @@
     "body": "import { withRouter } from 'react-router';"
   },
   "react-router Router": {
-		"prefix": "rrr",
+		"prefix": "router",
 		"body": [
       "<Router>",
       "\t<Route path='${1:path}' component={${2:component}}/>$0",
       "</Router>"
     ]
+	},
+  "react-router Route": {
+		"prefix": "route",
+		"body": "<Route path='${1:path}' component={${2:component}}/>"
+	},
+  "react-router NavLink": {
+		"prefix": "navlink",
+		"body": "<NavLink to={${1:path}}>{$anchorText}</NavLink>"
 	}
 }

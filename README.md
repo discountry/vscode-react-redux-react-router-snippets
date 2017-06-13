@@ -12,6 +12,10 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 * react-redux
 * react-router
 
+## Screenshot
+
+[![Screenshot](images/screenshot.git)]
+
 ## Usage
 
 ### import
@@ -22,7 +26,11 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 | `imrc`   | `import React, { Component } from 'react';` |
 | `impt`   | `import PropTypes from 'prop-types';` |
 | `imc`    | `import ${1:componentName} from './Components/${1:componentName}';` |
+| `imconnect`    | `import { connect } from 'react-redux';` |
+| `improvider`    | `import { Provider } from 'react-redux';` |
 | `imrr`   | `import { BrowserRouter, Route } from 'react-router-dom';` |
+| `imnl`    | `import { NavLink } from 'react-router-dom';` |
+| `imwr`    | `import { withRouter } from 'react-router';` |
 
 ### React
 
@@ -94,18 +102,24 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 
 | Trigger  | Content |
 | -------: | ------- |
-| `container`  | Redux container |
-| `crr`  | `import { connect } from 'react-redux';` |
-| `provider`  | `import { Provider } from 'react-redux';` |
+| `imconnect`    | `import { connect } from 'react-redux';` |
+| `improvider`    | `import { Provider } from 'react-redux';` |
+| `provider`  | react-redux Provider Container |
 | `mstp`  | mapStateToProps |
 | `mdtp`  | mapDispatchToProps |
 | `connect`  | react-redux connect React Component |
+| `container`  | Redux container |
 
 ### react-router
 
 | Trigger  | Content |
 | -------: | ------- |
-| `rrr`  | `<Router><Route /></Router>` |
+| `imrr`   | `import { BrowserRouter, Route } from 'react-router-dom';` |
+| `imnl`    | `import { NavLink } from 'react-router-dom';` |
+| `imwr`    | `import { withRouter } from 'react-router';` |
+| `router`  | react-router Router template |
+| `route`  | react-router  Route component |
+| `navlink`  | react-router  NavLink component |
 
 ## Acknowledgments
 

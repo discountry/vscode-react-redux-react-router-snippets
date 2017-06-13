@@ -1,7 +1,7 @@
 {
   "name": "react-redux-react-router-snippets",
-  "description": "Code snippets for React Ecosystem development in ES6 syntax",
-  "version": "0.2.0",
+  "description": "React Ecosystem code snippets all in one",
+  "version": "0.2.1",
   "displayName": "React/Redux/react-router Snippets",
   "publisher": "discountry",
   "icon": "images/logo.png",
