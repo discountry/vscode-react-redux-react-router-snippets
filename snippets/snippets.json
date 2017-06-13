@@ -421,8 +421,8 @@
         "\t};",
         "};",
         "const ${containerName} = connect(",
-        "\t${mapStateToProps,}",
-        "\t${mapDispatchToProps}",
+        "\tmapStateToProps,",
+        "\tmapDispatchToProps",
         ")(${component});",
         "",
         "export default ${containerName};"
