@@ -14,7 +14,7 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 
 ## Screenshot
 
-![Screenshot](images/screenshot.git)
+![Screenshot](images/screenshot.gif)
 
 ## Usage
 
