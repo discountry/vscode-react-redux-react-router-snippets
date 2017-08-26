@@ -1,137 +1,137 @@
 {
   // import
   "ES6 React Import": {
-		"prefix": "imr",
-		"body": "import React from 'react';"
-	},
+    "prefix": "imr",
+    "body": "import React from 'react'"
+  },
   "ES6 React & Component Import": {
-		"prefix": "imrc",
-		"body": "import React, { Component } from 'react';"
-	},
+    "prefix": "imrc",
+    "body": "import React, { Component } from 'react'"
+  },
   "ES6 PropTypes Import": {
-		"prefix": "impt",
-		"body": "import PropTypes from 'prop-types';"
-	},
+    "prefix": "impt",
+    "body": "import PropTypes from 'prop-types'"
+  },
   "ES6 Component Import": {
-		"prefix": "imc",
-		"body": "import ${1:componentName} from './Components/${1:componentName}';"
-	},
+    "prefix": "imc",
+    "body": "import ${1:componentName} from './Components/${1:componentName}'"
+  },
   // React
   "reactClassCompoment": {
     "prefix": "rcc",
-    "body": "import React, { Component } from 'react';\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default ${1:componentName};",
+    "body": "import React, { Component } from 'react'\n\nclass ${1:componentName} extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default ${1:componentName}",
     "description": "Creates a React component class with ES6 module system"
   },
 
   "reactJustClassCompoment": {
     "prefix": "rcjc",
-    "body": "class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
+    "body": "class ${1:componentName} extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n",
     "description": "Creates a React component class with ES6 module system"
   },
 
   "reactClassCompomentPropTypes": {
     "prefix": "rccp",
-    "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
+    "body": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\n\nclass ${1:componentName} extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n}\n\nexport default ${1:componentName}",
     "description": "Creates a React component class with PropTypes and ES6 module system"
   },
 
   "reactClassCompomentWithMethods": {
     "prefix": "rcfc",
-    "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:componentName} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
+    "body": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\n\nclass ${1:componentName} extends Component {\n\tconstructor (props) {\n\t\tsuper(props)\n\n\t}\n\n\tcomponentWillMount () {\n\n\t}\n\n\tcomponentDidMount () {\n\n\t}\n\n\tcomponentWillReceiveProps (nextProps) {\n\n\t}\n\n\tshouldComponentUpdate (nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate (nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate (prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount () {\n\n\t}\n\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n}\n\nexport default ${1:componentName}",
     "description": "Creates a React component class with PropTypes and all lifecycle methods and ES6 module system"
   },
 
   "reactStateless": {
     "prefix": "rsc",
-    "body": "import React from 'react';\n\nconst ${1:componentName} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};\n\nexport default ${1:componentName};",
+    "body": "import React from 'react'\n\nconst ${1:componentName} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${1:componentName}",
     "description": "Creates a stateless React component without PropTypes and ES6 module system"
   },
   "reactStatelessProps": {
     "prefix": "rscp",
-    "body": "import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:componentName} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:componentName}.propTypes = {\n\t$0\n};\n\nexport default ${1:componentName};",
+    "body": "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1:componentName} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t)\n}\n\n${1:componentName}.propTypes = {\n\t$0\n}\n\nexport default ${1:componentName}",
     "description": "Creates a stateless React component with PropTypes and ES6 module system"
   },
 
   "classConstructor": {
     "prefix": "con",
-    "body": "constructor(props) {\n\tsuper(props);\n\t$0\n}\n",
+    "body": "constructor (props) {\n\tsuper(props)\n\t$0\n}\n",
     "description": "Adds a default constructor for the class that contains props as arguments"
   },
   "classConstructorContext": {
     "prefix": "conc",
-    "body": "constructor(props, context) {\n\tsuper(props, context);\n\t$0\n}\n",
+    "body": "constructor (props, context) {\n\tsuper(props, context)\n\t$0\n}\n",
     "description": "Adds a default constructor for the class that contains props and context as arguments"
   },
 
   "emptyState": {
     "prefix": "est",
-    "body": "this.state = {\n\t$1\n};",
+    "body": "this.state = {\n\t$1\n}",
     "description": "Creates empty state object. To be used in a constructor."
   },
 
   "componentWillMount": {
     "prefix": "cwm",
-    "body": "\ncomponentWillMount() {\n\t$0\n}\n",
+    "body": "\ncomponentWillMount () {\n\t$0\n}\n",
     "description": "Invoked once, both on the client and server, immediately before the initial rendering occurs"
   },
 
   "componentDidMount": {
     "prefix": "cdm",
-    "body": "componentDidMount() {\n\t$0\n}\n",
+    "body": "componentDidMount () {\n\t$0\n}\n",
     "description": "Invoked once, only on the client (not on the server), immediately after the initial rendering occurs."
   },
 
   "componentWillReceiveProps": {
     "prefix": "cwr",
-    "body": "componentWillReceiveProps(nextProps) {\n\t$0\n}\n",
+    "body": "componentWillReceiveProps (nextProps) {\n\t$0\n}\n",
     "description": "Invoked when a component is receiving new props. This method is not called for the initial render."
   },
 
   "shouldComponentUpdate": {
     "prefix": "scu",
-    "body": "shouldComponentUpdate(nextProps, nextState) {\n\t$0\n}\n",
+    "body": "shouldComponentUpdate (nextProps, nextState) {\n\t$0\n}\n",
     "description": "Invoked before rendering when new props or state are being received. "
   },
 
   "componentWillUpdate": {
     "prefix": "cwup",
-    "body": "componentWillUpdate(nextProps, nextState) {\n\t$0\n}\n",
+    "body": "componentWillUpdate (nextProps, nextState) {\n\t$0\n}\n",
     "description": "Invoked immediately before rendering when new props or state are being received."
   },
 
   "componentDidUpdate": {
     "prefix": "cdup",
-    "body": "componentDidUpdate(prevProps, prevState) {\n\t$0\n}\n",
+    "body": "componentDidUpdate (prevProps, prevState) {\n\t$0\n}\n",
     "description": "Invoked immediately after the component's updates are flushed to the DOM."
   },
 
   "componentWillUnmount": {
     "prefix": "cwun",
-    "body": "componentWillUnmount() {\n\t$0\n}\n",
+    "body": "componentWillUnmount () {\n\t$0\n}\n",
     "description": "Invoked immediately before a component is unmounted from the DOM."
   },
 
-   "componentRender": {
+  "componentRender": {
     "prefix": "ren",
-    "body": "render() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n}",
+    "body": "render () {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
     "description": "When called, it should examine this.props and this.state and return a single child element."
   },
 
   "componentSetStateObject": {
     "prefix": "sst",
-    "body": "this.setState($0);",
+    "body": "this.setState($0)",
     "description": "Performs a shallow merge of nextState into current state"
   },
 
   "componentSetStateFunc": {
     "prefix": "ssf",
-    "body": "this.setState((state, props) => { return { $0 }});\n",
+    "body": "this.setState((state, props) => { return { $0 }})\n",
     "description": "Performs a shallow merge of nextState into current state"
   },
 
   "componentProps": {
     "prefix": "props",
-    "body":"this.props.$0",
+    "body": "this.props.$0",
     "description": "Access component's props"
   },
 
@@ -143,14 +143,14 @@
 
   "bindThis": {
     "prefix": "bnd",
-	"body": "this.$1 = this.$1.bind(this);$0",
-	"description": "Binds the this of a method. To be used inside a constructor"
+    "body": "this.$1 = this.$1.bind(this)$0",
+    "description": "Binds the this of a method. To be used inside a constructor"
   },
 
   "propTypes": {
-	"prefix": "rpt",
-	"body": "$1.propTypes = {\n\t$2\n};",
-	"description": "Creates empty propTypes declaration"
+    "prefix": "rpt",
+    "body": "$1.propTypes = {\n\t$2\n}",
+    "description": "Creates empty propTypes declaration"
   },
 
   "propTypeArray": {
@@ -273,7 +273,7 @@
     "body": "PropTypes.arrayOf($0).isRequired,",
     "description": "An array of a certain type required"
   },
-    "propTypeObjectOf": {
+  "propTypeObjectOf": {
     "prefix": "ptoo",
     "body": "PropTypes.objectOf($0),",
     "description": "An object with property values of a certain type"
@@ -296,7 +296,7 @@
   // Redux
   "Redux constant": {
     "prefix": "rat",
-    "body": "export const $1 = '$1';",
+    "body": "export const $1 = '$1'",
     "description": "Redux action types."
   },
   "Redux actionCreator": {
@@ -305,7 +305,7 @@
       "export const ${actionCreator} = (${payload}) => ({",
       "\ttype: ${actionType},",
       "\t${payload}",
-      "});"
+      "})"
     ]
   },
   "Redux Reducer": {
@@ -314,57 +314,57 @@
       "export const ${1:reducerName} = (state = $2, action) => {",
       "\tswitch (action.type) {",
       "\t\tcase '${3:ACTION_TYPE}':",
-      "\t\t\treturn $4;$0",
+      "\t\t\treturn $4$0",
       "\t\tdefault:",
-      "\t\t\treturn state;",
+      "\t\t\treturn state",
       "\t}",
-      "};"
+      "}"
     ],
     "description": "Redux reducer."
   },
   "Redux Store": {
     "prefix": "store",
     "body": [
-      "import { ${1:reducerName} } from './reducer';",
-      "import { createStore } from 'redux';",
+      "import { ${1:reducerName} } from './reducer'",
+      "import { createStore } from 'redux'",
       "",
-      "const store = createStore(${1:reducerName});",
+      "const store = createStore(${1:reducerName})",
       "",
-      "export default store;"
+      "export default store"
     ],
     "description": "Redux store."
   },
   "Redux Selector": {
     "prefix": "selector",
-    "body":[
+    "body": [
       "const ${1:selectorName} = (state, filter) => {",
       "\tswitch(filter) {",
       "\t\tcase '${2:filterType}':",
-      "\t\t\treturn state.filter(t => $3);",
+      "\t\t\treturn state.filter(t => $3)",
       "\t\tdefault:",
-      "\t\t\treturn state;",
+      "\t\t\treturn state",
       "\t}",
-      "};",
+      "}",
       "",
-      "export default ${1:selectorName};"
+      "export default ${1:selectorName}"
     ],
     "description": "Redux selector."
   },
   // react-redux
   "Connect Redux": {
     "prefix": "imconnect",
-    "body": "import { connect } from 'react-redux';"
+    "body": "import { connect } from 'react-redux'"
   },
   "Provider Redux": {
     "prefix": "improvider",
-    "body": "import { Provider } from 'react-redux';"
+    "body": "import { Provider } from 'react-redux'"
   },
   "mapStateToProps": {
     "prefix": "mstp",
     "body": [
       "const mapStateToProps = (state, ownProps) => ({",
       "\t${1:propName}: ${2:prop}",
-      "});"
+      "})"
     ],
     "description": "react-redux connect mapStateToProps const function."
   },
@@ -373,94 +373,94 @@
     "body": [
       "const mapDispatchToProps = (dispatch) => ({",
       "\t${1:propName}: (${2:params}) => {",
-      "\t\tdispatch(${3:actionCreator}(${2:params}));",
+      "\t\tdispatch(${3:actionCreator}(${2:params}))",
       "\t}",
-      "});"
+      "})"
     ],
     "description": "react-redux connect mapDispatchToProps const function."
   },
   "connect": {
     "prefix": "connect",
     "body": [
-        "const ${containerName} = connect(",
-        "\t${mapStateToProps,}",
-        "\t${mapDispatchToProps}",
-        ")(${component});",
-        "",
-        "export default ${containerName};"
+      "const ${containerName} = connect(",
+      "\t${mapStateToProps,}",
+      "\t${mapDispatchToProps}",
+      ")(${component})",
+      "",
+      "export default ${containerName}"
     ],
     "description": "react-redux connect method."
   },
   "provider": {
     "prefix": "provider",
     "body": [
-        "<Provider store={store}>",
-        "\t${Component}$0",
-        "</Provider>"
+      "<Provider store={store}>",
+      "\t${Component}$0",
+      "</Provider>"
     ],
     "description": "react-redux Provider Container."
   },
   "container": {
     "prefix": "container",
     "body": [
-        "import { connect } from 'react-redux';",
-        "import ${component} from '../Components/${component}';",
-        "import { ${actionCreator} } from '../${actionPath}';",
-        "",
-        "const mapStateToProps = (state, ownProps) => {",
-        "\treturn {",
-        "\t\t${propName}: ${prop}",
-        "\t};",
-        "};",
-        "",
-        "const mapDispatchToProps = (dispatch) => {",
-        "\treturn {",
-        "\t\t${eventHandler}: (${param}) => {",
-        "\t\t\tdispatch(${actionCreator}(${param}))",
-        "\t\t}",
-        "\t};",
-        "};",
-        "const ${containerName} = connect(",
-        "\tmapStateToProps,",
-        "\tmapDispatchToProps",
-        ")(${component});",
-        "",
-        "export default ${containerName};"
+      "import { connect } from 'react-redux'",
+      "import ${component} from '../Components/${component}'",
+      "import { ${actionCreator} } from '../${actionPath}'",
+      "",
+      "const mapStateToProps = (state, ownProps) => {",
+      "\treturn {",
+      "\t\t${propName}: ${prop}",
+      "\t}",
+      "}",
+      "",
+      "const mapDispatchToProps = (dispatch) => {",
+      "\treturn {",
+      "\t\t${eventHandler}: (${param}) => {",
+      "\t\t\tdispatch(${actionCreator}(${param}))",
+      "\t\t}",
+      "\t}",
+      "}",
+      "const ${containerName} = connect(",
+      "\tmapStateToProps,",
+      "\tmapDispatchToProps",
+      ")(${component})",
+      "",
+      "export default ${containerName}"
     ],
-    "description" : "Redux container"
+    "description": "Redux container"
   },
   // react-router
   "ES6 react-router Import": {
-		"prefix": "imrr",
-		"body": [
+    "prefix": "imrr",
+    "body": [
       "import {",
       "\tBrowserRouter as Router,",
       "\tRoute",
-      "} from 'react-router-dom';"
+      "} from 'react-router-dom'"
     ]
-	},
+  },
   "ES6 react-router NavLink Import": {
     "prefix": "imnl",
-    "body": "import { NavLink } from 'react-router-dom';"
+    "body": "import { NavLink } from 'react-router-dom'"
   },
   "ES6 react-router withRouter Import": {
     "prefix": "imwr",
-    "body": "import { withRouter } from 'react-router';"
+    "body": "import { withRouter } from 'react-router'"
   },
   "react-router Router": {
-		"prefix": "router",
-		"body": [
+    "prefix": "router",
+    "body": [
       "<Router>",
       "\t<Route path='${1:path}' component={${2:component}}/>$0",
       "</Router>"
     ]
-	},
+  },
   "react-router Route": {
-		"prefix": "route",
-		"body": "<Route path='${1:path}' component={${2:component}}/>"
-	},
+    "prefix": "route",
+    "body": "<Route path='${1:path}' component={${2:component}}/>"
+  },
   "react-router NavLink": {
-		"prefix": "navlink",
-		"body": "<NavLink to={${1:path}}>{$anchorText}</NavLink>"
-	}
+    "prefix": "navlink",
+    "body": "<NavLink to={${1:path}}>{$anchorText}</NavLink>"
+  }
 }
