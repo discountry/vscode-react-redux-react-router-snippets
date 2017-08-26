@@ -69,6 +69,12 @@
     "description": "Creates empty state object. To be used in a constructor."
   },
 
+  "emptyStateWithES7": {
+    "prefix": "st",
+    "body": "state = {\n\t$1\n}\n",
+    "description": "Creates empty state object with ES7 synTax."
+  },
+
   "componentWillMount": {
     "prefix": "cwm",
     "body": "\ncomponentWillMount () {\n\t$0\n}\n",
