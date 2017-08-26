@@ -389,11 +389,9 @@
   "mapDispatchToProps": {
     "prefix": "mdtp",
     "body": [
-      "const mapDispatchToProps = (dispatch) => ({",
-      "\t${1:propName}: (${2:params}) => {",
-      "\t\tdispatch(${3:actionCreator}(${2:params}))",
-      "\t}",
-      "})"
+      "const mapDispatchToProps = {",
+      "\t$0",
+      "}"
     ],
     "description": "react-redux connect mapDispatchToProps const function."
   },
@@ -431,12 +429,8 @@
       "\t}",
       "}",
       "",
-      "const mapDispatchToProps = (dispatch) => {",
-      "\treturn {",
-      "\t\t${eventHandler}: (${param}) => {",
-      "\t\t\tdispatch(${actionCreator}(${param}))",
-      "\t\t}",
-      "\t}",
+      "const mapDispatchToProps = {",
+      "\t",
       "}",
       "const ${containerName} = connect(",
       "\tmapStateToProps,",
