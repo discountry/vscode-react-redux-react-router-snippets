@@ -19,7 +19,7 @@
   // React
   "reactClassCompoment": {
     "prefix": "rcc",
-    "body": "import React, { Component } from 'react'\n\nclass ${1:componentName} extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default ${1:componentName}",
+    "body": "import React, { Component } from 'react'\n\nexport default class ${1:componentName} extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n",
     "description": "Creates a React component class with ES6 module system"
   },
 
@@ -31,7 +31,7 @@
 
   "reactClassCompomentPropTypes": {
     "prefix": "rccp",
-    "body": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\n\nclass ${1:componentName} extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n}\n\nexport default ${1:componentName}",
+    "body": "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\n\nexport default class ${1:componentName} extends Component {\n\tstatic propTypes = {\n\n\t}\n\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n",
     "description": "Creates a React component class with PropTypes and ES6 module system"
   },
 
@@ -43,12 +43,12 @@
 
   "reactStateless": {
     "prefix": "rsc",
-    "body": "import React from 'react'\n\nconst ${1:componentName} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${1:componentName}",
+    "body": "import React from 'react'\n\nfunction ${1:componentName} () {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${1:componentName}",
     "description": "Creates a stateless React component without PropTypes and ES6 module system"
   },
   "reactStatelessProps": {
     "prefix": "rscp",
-    "body": "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1:componentName} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t)\n}\n\n${1:componentName}.propTypes = {\n\t$0\n}\n\nexport default ${1:componentName}",
+    "body": "import React from 'react'\nimport PropTypes from 'prop-types'\n\n${1:componentName}.propTypes = {\n\t$0\n}\n\nfunction ${1:componentName} (props) {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t)\n}\n\nexport default ${1:componentName}",
     "description": "Creates a stateless React component with PropTypes and ES6 module system"
   },
 
@@ -77,43 +77,43 @@
 
   "componentDidMount": {
     "prefix": "cdm",
-    "body": "componentDidMount () {\n\t$0\n}\n",
+    "body": "\ncomponentDidMount () {\n\t$0\n}\n",
     "description": "Invoked once, only on the client (not on the server), immediately after the initial rendering occurs."
   },
 
   "componentWillReceiveProps": {
     "prefix": "cwr",
-    "body": "componentWillReceiveProps (nextProps) {\n\t$0\n}\n",
+    "body": "\ncomponentWillReceiveProps (nextProps) {\n\t$0\n}\n",
     "description": "Invoked when a component is receiving new props. This method is not called for the initial render."
   },
 
   "shouldComponentUpdate": {
     "prefix": "scu",
-    "body": "shouldComponentUpdate (nextProps, nextState) {\n\t$0\n}\n",
+    "body": "\nshouldComponentUpdate (nextProps, nextState) {\n\t$0\n}\n",
     "description": "Invoked before rendering when new props or state are being received. "
   },
 
   "componentWillUpdate": {
     "prefix": "cwup",
-    "body": "componentWillUpdate (nextProps, nextState) {\n\t$0\n}\n",
+    "body": "\ncomponentWillUpdate (nextProps, nextState) {\n\t$0\n}\n",
     "description": "Invoked immediately before rendering when new props or state are being received."
   },
 
   "componentDidUpdate": {
     "prefix": "cdup",
-    "body": "componentDidUpdate (prevProps, prevState) {\n\t$0\n}\n",
+    "body": "\ncomponentDidUpdate (prevProps, prevState) {\n\t$0\n}\n",
     "description": "Invoked immediately after the component's updates are flushed to the DOM."
   },
 
   "componentWillUnmount": {
     "prefix": "cwun",
-    "body": "componentWillUnmount () {\n\t$0\n}\n",
+    "body": "\ncomponentWillUnmount () {\n\t$0\n}\n",
     "description": "Invoked immediately before a component is unmounted from the DOM."
   },
 
   "componentRender": {
     "prefix": "ren",
-    "body": "render () {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
+    "body": "\nrender () {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
     "description": "When called, it should examine this.props and this.state and return a single child element."
   },
 
@@ -151,6 +151,18 @@
     "prefix": "rpt",
     "body": "$1.propTypes = {\n\t$2\n}",
     "description": "Creates empty propTypes declaration"
+  },
+
+  "static propTypes": {
+    "prefix": "spt",
+    "body": "static propTypes = {\n\t$0\n}\n",
+    "description": "Creates empty propTypes declaration with ES7 class static properties"
+  },
+
+  "static defaultProps": {
+    "prefix": "spt",
+    "body": "static defaultprops = {\n\t$0\n}\n",
+    "description": "Creates empty defaultProps declaration with ES7 class static properties"
   },
 
   "propTypeArray": {
@@ -462,5 +474,16 @@
   "react-router NavLink": {
     "prefix": "navlink",
     "body": "<NavLink to={${1:path}}>{$anchorText}</NavLink>"
+  },
+  // comment block
+  "Comment Block": {
+    "prefix": "cmmb",
+    "body": [
+      "/**",
+      "|--------------------------------------------------",
+      "| $1",
+      "|--------------------------------------------------",
+      "*/"
+    ]
   }
 }
