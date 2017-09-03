@@ -166,8 +166,8 @@
   },
 
   "static defaultProps": {
-    "prefix": "spt",
-    "body": "static defaultprops = {\n\t$0\n}\n",
+    "prefix": "sdp",
+    "body": "static defaultProps = {\n\t$0\n}\n",
     "description": "Creates empty defaultProps declaration with ES7 class static properties"
   },
 
