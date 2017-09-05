@@ -1,8 +1,8 @@
 # React/Redux/react-router Snippets
 
-[![Version](http://vsmarketplacebadge.apphb.com/version/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
-[![Install](http://vsmarketplacebadge.apphb.com/installs/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
-[![Ratings](http://vsmarketplacebadge.apphb.com/rating-short/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
+[![Version](https://vsmarketplacebadge.apphb.com/version/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
+[![Install](https://vsmarketplacebadge.apphb.com/installs/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
 
 Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstudio.com/), including:
 
@@ -120,6 +120,10 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 | `router`  | react-router Router template |
 | `route`  | react-router  Route component |
 | `navlink`  | react-router  NavLink component |
+
+## Contributors
+
+* [YutHelloWorld](https://github.com/YutHelloWorld)
 
 ## Acknowledgments
 
