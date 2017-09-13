@@ -371,18 +371,18 @@
   // react-redux
   "Connect Redux": {
     "prefix": "imconnect",
-    "body": "import { connect } from 'react-redux'"
+    "body": "import { connect } from 'react-redux'\n"
   },
   "Provider Redux": {
     "prefix": "improvider",
-    "body": "import { Provider } from 'react-redux'"
+    "body": "import { Provider } from 'react-redux'\n"
   },
   "mapStateToProps": {
     "prefix": "mstp",
     "body": [
       "const mapStateToProps = (state, ownProps) => ({",
       "\t${1:propName}: ${2:prop}",
-      "})"
+      "})\n"
     ],
     "description": "react-redux connect mapStateToProps const function."
   },
@@ -391,19 +391,14 @@
     "body": [
       "const mapDispatchToProps = {",
       "\t$0",
-      "}"
+      "}\n"
     ],
     "description": "react-redux connect mapDispatchToProps const function."
   },
   "connect": {
     "prefix": "connect",
     "body": [
-      "const ${containerName} = connect(",
-      "\t${mapStateToProps,}",
-      "\t${mapDispatchToProps}",
-      ")(${component})",
-      "",
-      "export default ${containerName}"
+      "export default connect(mapStateToProps, mapDispatchToProps)(${containerName})"
     ],
     "description": "react-redux connect method."
   },
@@ -420,24 +415,18 @@
     "prefix": "container",
     "body": [
       "import { connect } from 'react-redux'",
-      "import ${component} from '../Components/${component}'",
+      "import ${component} from '../components/${component}'",
       "import { ${actionCreator} } from '../${actionPath}'",
       "",
-      "const mapStateToProps = (state, ownProps) => {",
-      "\treturn {",
-      "\t\t${propName}: ${prop}",
-      "\t}",
-      "}",
+      "const mapStateToProps = (state, ownProps) => ({",
+      "\t${propName}:",
+      "})",
       "",
       "const mapDispatchToProps = {",
       "\t",
       "}\n",
-      "const ${containerName} = connect(",
-      "\tmapStateToProps,",
-      "\tmapDispatchToProps",
-      ")(${component})",
-      "",
-      "export default ${containerName}"
+      "export default connect(mapStateToProps, mapDispatchToProps)(${containerName})",
+      ""
     ],
     "description": "Redux container"
   },
@@ -483,7 +472,8 @@
       "|--------------------------------------------------",
       "| $1",
       "|--------------------------------------------------",
-      "*/"
+      "*/",
+      ""
     ]
   }
 }
