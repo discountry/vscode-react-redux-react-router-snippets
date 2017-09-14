@@ -2,19 +2,19 @@
   // import
   "ES6 React Import": {
     "prefix": "imr",
-    "body": "import React from 'react'"
+    "body": "import React from 'react'\n"
   },
   "ES6 React & Component Import": {
     "prefix": "imrc",
-    "body": "import React, { Component } from 'react'"
+    "body": "import React, { Component } from 'react'\n"
   },
   "ES6 PropTypes Import": {
     "prefix": "impt",
-    "body": "import PropTypes from 'prop-types'"
+    "body": "import PropTypes from 'prop-types'\n"
   },
   "ES6 Component Import": {
     "prefix": "imc",
-    "body": "import ${1:componentName} from './Components/${1:componentName}'"
+    "body": "import ${1:componentName} from './Components/${1:componentName}'\n"
   },
   // React
   "reactClassCompoment": {
@@ -125,13 +125,13 @@
 
   "componentSetStateObject": {
     "prefix": "sst",
-    "body": "this.setState($0)",
+    "body": "this.setState($0)\n",
     "description": "Performs a shallow merge of nextState into current state"
   },
 
   "componentSetStateFunc": {
     "prefix": "ssf",
-    "body": "this.setState((state, props) => { return { $0 }})\n",
+    "body": "this.setState((prevState, props) => { return { $0 }})\n",
     "description": "Performs a shallow merge of nextState into current state"
   },
 
@@ -149,7 +149,7 @@
 
   "bindThis": {
     "prefix": "bnd",
-    "body": "this.$1 = this.$1.bind(this)$0",
+    "body": "this.$1 = this.$1.bind(this)$0\n",
     "description": "Binds the this of a method. To be used inside a constructor"
   },
 
@@ -312,6 +312,11 @@
     "description": "An object taking on a particular shape required"
   },
   // Redux
+  "Import reselect": {
+    "prefix": "imcreateSelector",
+    "body": "import { createSelector } from 'reselect'\n",
+    "description": "import createSelector"
+  },
   "Redux constant": {
     "prefix": "rat",
     "body": "export const $1 = '$1'",
@@ -355,16 +360,13 @@
   "Redux Selector": {
     "prefix": "selector",
     "body": [
-      "const ${1:selectorName} = (state, filter) => {",
-      "\tswitch(filter) {",
-      "\t\tcase '${2:filterType}':",
-      "\t\t\treturn state.filter(t => $3)",
-      "\t\tdefault:",
-      "\t\t\treturn state",
+      "export const ${1:selectorName} = createSelector(",
+      "\t[${2:filter1}, ${3:filter2}]",
+      "\t(filter1, filter2) => {",
+      "\t\t",
       "\t}",
-      "}",
-      "",
-      "export default ${1:selectorName}"
+      ")",
+      ""
     ],
     "description": "Redux selector."
   },
@@ -381,7 +383,7 @@
     "prefix": "mstp",
     "body": [
       "const mapStateToProps = (state, ownProps) => ({",
-      "\t${1:propName}: ${2:prop}",
+      "\t$0",
       "})\n"
     ],
     "description": "react-redux connect mapStateToProps const function."
@@ -419,11 +421,11 @@
       "import { ${actionCreator} } from '../${actionPath}'",
       "",
       "const mapStateToProps = (state, ownProps) => ({",
-      "\t${propName}:",
+      "\t$0",
       "})",
       "",
       "const mapDispatchToProps = {",
-      "\t",
+      "\t$0",
       "}\n",
       "export default connect(mapStateToProps, mapDispatchToProps)(${containerName})",
       ""
@@ -437,12 +439,12 @@
       "import {",
       "\tBrowserRouter as Router,",
       "\tRoute",
-      "} from 'react-router-dom'"
+      "} from 'react-router-dom'\n"
     ]
   },
   "ES6 react-router NavLink Import": {
     "prefix": "imnl",
-    "body": "import { NavLink } from 'react-router-dom'"
+    "body": "import { NavLink } from 'react-router-dom'\n"
   },
   "ES6 react-router withRouter Import": {
     "prefix": "imwr",
@@ -458,11 +460,11 @@
   },
   "react-router Route": {
     "prefix": "route",
-    "body": "<Route path='${1:path}' component={${2:component}}/>"
+    "body": "<Route path='${1:path}' component={${2:component}}/>\n"
   },
   "react-router NavLink": {
     "prefix": "navlink",
-    "body": "<NavLink to={${1:path}}>{$anchorText}</NavLink>"
+    "body": "<NavLink to={${1:path}}>{$anchorText}</NavLink>\n"
   },
   // comment block
   "Comment Block": {
