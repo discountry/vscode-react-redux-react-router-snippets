@@ -22,15 +22,16 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 
 | Trigger  | Content |
 | -------: | ------- |
-| `imr`    | `import React from 'react';` |
-| `imrc`   | `import React, { Component } from 'react';` |
-| `impt`   | `import PropTypes from 'prop-types';` |
-| `imc`    | `import ${1:componentName} from './Components/${1:componentName}';` |
-| `imconnect`    | `import { connect } from 'react-redux';` |
-| `improvider`    | `import { Provider } from 'react-redux';` |
-| `imrr`   | `import { BrowserRouter, Route } from 'react-router-dom';` |
-| `imnl`    | `import { NavLink } from 'react-router-dom';` |
-| `imwr`    | `import { withRouter } from 'react-router';` |
+| `imr`    | `import React from 'react'` |
+| `imrc`   | `import React, { Component } from 'react'` |
+| `impt`   | `import PropTypes from 'prop-types'` |
+| `imc`    | `import ${1:componentName} from './Components/${1:componentName}'` |
+| `imconnect`    | `import { connect } from 'react-redux'` |
+| `improvider`    | `import { Provider } from 'react-redux'` |
+| `imcreateSelector`    | `import { createSelector } from 'reselect'` |
+| `imrr`   | `import { BrowserRouter, Route } from 'react-router-dom'` |
+| `imnl`    | `import { NavLink } from 'react-router-dom'` |
+| `imwr`    | `import { withRouter } from 'react-router-dom'` |
 
 ### React
 
@@ -43,9 +44,12 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 | `rsc→`   | stateless component skeleton |
 | `rscp→`  | stateless component with prop types skeleton |
 | `rpt→`   | empty propTypes declaration |
+| `spt→`   | `static propTypes = {}` |
+| `sdp→`   | `static defaultProps = {}` |
 | `con→`   | class default constructor with props|
 | `conc→`  | class default constructor with props and context |
 | `est→`   | empty state object |
+| `st→`   | Creates empty state object with ES7 synTax |
 | `cwm→`   | `componentWillMount method` |
 | `cdm→`   | `componentDidMount method` |
 | `cwr→`   | `componentWillReceiveProps method` |
@@ -102,8 +106,8 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 
 | Trigger  | Content |
 | -------: | ------- |
-| `imconnect`    | `import { connect } from 'react-redux';` |
-| `improvider`    | `import { Provider } from 'react-redux';` |
+| `imconnect`    | `import { connect } from 'react-redux'` |
+| `improvider`    | `import { Provider } from 'react-redux'` |
 | `provider`  | react-redux Provider Container |
 | `mstp`  | mapStateToProps |
 | `mdtp`  | mapDispatchToProps |
@@ -114,9 +118,9 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 
 | Trigger  | Content |
 | -------: | ------- |
-| `imrr`   | `import { BrowserRouter, Route } from 'react-router-dom';` |
-| `imnl`    | `import { NavLink } from 'react-router-dom';` |
-| `imwr`    | `import { withRouter } from 'react-router';` |
+| `imrr`   | `import { BrowserRouter as Router, Route } from 'react-router-dom'` |
+| `imnl`    | `import { NavLink } from 'react-router-dom'` |
+| `imwr`    | `import { withRouter } from 'react-router'` |
 | `router`  | react-router Router template |
 | `route`  | react-router  Route component |
 | `navlink`  | react-router  NavLink component |
