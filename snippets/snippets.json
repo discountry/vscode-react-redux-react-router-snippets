@@ -14,7 +14,7 @@
   },
   "ES6 Component Import": {
     "prefix": "imc",
-    "body": "import ${1:componentName} from './Components/${1:componentName}'\n"
+    "body": "import ${1:componentName} from './components/${1:componentName}'\n"
   },
   // React
   "reactClassCompoment": {
@@ -131,7 +131,7 @@
 
   "componentSetStateFunc": {
     "prefix": "ssf",
-    "body": "this.setState((prevState, props) => { return { $0 }})\n",
+    "body": "this.setState((prevState, props) => ({ $0 })\n",
     "description": "Performs a shallow merge of nextState into current state"
   },
 
@@ -427,7 +427,7 @@
       "const mapDispatchToProps = {",
       "\t$0",
       "}\n",
-      "export default connect(mapStateToProps, mapDispatchToProps)(${containerName})",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${component})",
       ""
     ],
     "description": "Redux container"
@@ -448,13 +448,13 @@
   },
   "ES6 react-router withRouter Import": {
     "prefix": "imwr",
-    "body": "import { withRouter } from 'react-router'"
+    "body": "import { withRouter } from 'react-router-dom'"
   },
   "react-router Router": {
     "prefix": "router",
     "body": [
       "<Router>",
-      "\t<Route path='${1:path}' component={${2:component}}/>$0",
+      "\t${0}",
       "</Router>"
     ]
   },
