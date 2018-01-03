@@ -24,6 +24,7 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 | -------: | ------- |
 | `imr`    | `import React from 'react'` |
 | `imrc`   | `import React, { Component } from 'react'` |
+| `imd`   | `import { render } from 'react-dom'` |
 | `impt`   | `import PropTypes from 'prop-types'` |
 | `imc`    | `import ${1:componentName} from './Components/${1:componentName}'` |
 | `imconnect`    | `import { connect } from 'react-redux'` |
@@ -139,4 +140,3 @@ Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstud
 ## License
 
 [MIT](LICENSE)
-
