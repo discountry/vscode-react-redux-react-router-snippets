@@ -8,6 +8,10 @@
     "prefix": "imrc",
     "body": "import React, { Component } from 'react'\n"
   },
+  "ES6 React-DOM Import": {
+    "prefix": "imd",
+    "body": "import { render } from 'react-dom'\n"
+  },
   "ES6 PropTypes Import": {
     "prefix": "impt",
     "body": "import PropTypes from 'prop-types'\n"
