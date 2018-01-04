@@ -121,6 +121,12 @@
     "description": "Invoked immediately before a component is unmounted from the DOM."
   },
 
+  "componentDidCatch": {
+    "prefix": "cdc",
+    "body": "\ncomponentDidCatch() {\n\t$0\n}\n",
+    "description": "Error boundaries are React components that catch JavaScript errors anywhere in their child component tree."
+  },
+
   "componentRender": {
     "prefix": "ren",
     "body": "\nrender() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}",
