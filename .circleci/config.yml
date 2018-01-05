@@ -54,4 +54,4 @@ jobs:
           command: git config --global user.name "$GH_NAME" > /dev/null 2>&1
       - run:
           name: Commit & Push
-          command: git add -A && git commit -m "update version" && git push origin master
+          command: git add -A && git commit -m "update version [ci skip]" && git push origin master
