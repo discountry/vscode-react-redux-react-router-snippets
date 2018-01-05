@@ -123,7 +123,7 @@
 
   "componentDidCatch": {
     "prefix": "cdc",
-    "body": "\ncomponentDidCatch() {\n\t$0\n}\n",
+    "body": "\ncomponentDidCatch(error, info) {\n\t$0\n}\n",
     "description": "Error boundaries are React components that catch JavaScript errors anywhere in their child component tree."
   },
 
