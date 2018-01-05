@@ -1,41 +1,41 @@
 {
-  "name": "react-redux-react-router-snippets",
-  "description": "React Ecosystem code snippets all in one",
-  "version": "0.4.2",
-  "scripts": {
-    "test": "echo \"Empty Test\""
-  },
-  "displayName": "React/Redux/react-router Snippets",
-  "publisher": "discountry",
-  "icon": "images/logo.png",
-  "galleryBanner": {
-    "theme": "light"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/discountry/vscode-react-redux-react-router-snippets"
-  },
-  "engines": {
-    "vscode": "0.10.x"
-  },
-  "categories": [
-    "Snippets"
-  ],
-  "contributes": {
-    "snippets": [
-	  {
-        "language": "javascriptreact",
-        "path": "./snippets/snippets.json"
-	  },
-      {
-        "language": "javascript",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "jsx",
-        "path": "./snippets/snippets.json"
-      }
-    ]
-  }
+    "name": "react-redux-react-router-snippets",
+    "description": "React Ecosystem code snippets all in one",
+    "version": "0.4.3",
+    "scripts": {
+        "test": "echo \"Empty Test\""
+    },
+    "displayName": "React/Redux/react-router Snippets",
+    "publisher": "discountry",
+    "icon": "images/logo.png",
+    "galleryBanner": {
+        "theme": "light"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/discountry/vscode-react-redux-react-router-snippets"
+    },
+    "engines": {
+        "vscode": "0.10.x"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "jsx",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
 }
