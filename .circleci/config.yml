@@ -38,7 +38,7 @@ jobs:
       # Publish plugin
       - run:
           name: Install vsce
-          command: yarn global add vsce
+          command: sudo yarn global add vsce
       - run:
           name: Publish to VS Code Market
           command: vsce publish minor -p $VSCE_KEY
