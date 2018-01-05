@@ -1,4 +1,4 @@
-# React/Redux/react-router Snippets
+# React/Redux/react-router Snippets [![CircleCI](https://circleci.com/gh/discountry/vscode-react-redux-react-router-snippets/tree/master.svg?style=svg)](https://circleci.com/gh/discountry/vscode-react-redux-react-router-snippets/tree/master)
 
 [![Version](https://vsmarketplacebadge.apphb.com/version/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
 [![Install](https://vsmarketplacebadge.apphb.com/installs/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
