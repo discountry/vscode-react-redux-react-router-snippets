@@ -17,6 +17,9 @@ jobs:
     working_directory: ~/repo
 
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "88:dc:c3:ae:9e:1c:27:57:97:0a:63:dc:d3:f8:d4:28"
       - checkout
 
       # Download and cache dependencies
@@ -42,3 +45,13 @@ jobs:
       - run:
           name: Publish to VS Code Market
           command: vsce publish patch -p $VSCE_KEY
+      # Update GitHub version
+      - run:
+          name: Add GitHub email
+          command: git config --global user.email "$GH_EMAIL" > /dev/null 2>&1
+      - run:
+          name: Add GitHub username
+          command: git config --global user.name "$GH_NAME" > /dev/null 2>&1
+      - run:
+          name: Commit & Push
+          command: git add -A && git commit -m "update version" && git push origin master
