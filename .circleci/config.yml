@@ -41,4 +41,4 @@ jobs:
           command: sudo yarn global add vsce
       - run:
           name: Publish to VS Code Market
-          command: vsce publish minor -p $VSCE_KEY
+          command: vsce publish patch -p $VSCE_KEY
