@@ -1,7 +1,7 @@
 {
     "name": "react-redux-react-router-snippets",
     "description": "React Ecosystem code snippets all in one",
-    "version": "0.4.9",
+    "version": "0.4.10",
     "scripts": {
         "test": "echo \"Empty Test\""
     },
