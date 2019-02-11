@@ -1,5 +1,5 @@
 {
-  // import
+  "section-1": "IMPORTS",
   "ES6 React Import": {
     "prefix": "imr",
     "body": "import React from 'react'\n"
@@ -20,7 +20,7 @@
     "prefix": "imc",
     "body": "import ${1:componentName} from './components/${1:componentName}'\n"
   },
-  // React
+  "section-2": "REACT",
   "reactClassCompoment": {
     "prefix": "rcc",
     "body": "import React, { Component } from 'react'\n\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n",
@@ -321,7 +321,12 @@
     "body": "PropTypes.shape({\n\t$0\n}).isRequired,",
     "description": "An object taking on a particular shape required"
   },
-  // Redux
+  "reactStateHook": {
+    "prefix": "rhk",
+    "body": "const [count, setCount] = React.useState(0)",
+    "description": "declare a new state variable using hooks"
+  },
+  "section-3": "REDUX",
   "Import reselect": {
     "prefix": "imcreateSelector",
     "body": "import { createSelector } from 'reselect'\n",
@@ -380,7 +385,7 @@
     ],
     "description": "Redux selector."
   },
-  // react-redux
+  "section-4": "REACT-REDUX",
   "Connect Redux": {
     "prefix": "imconnect",
     "body": "import { connect } from 'react-redux'\n"
@@ -442,7 +447,7 @@
     ],
     "description": "Redux container"
   },
-  // react-router
+  "section-5": "REACT-ROUTER",
   "ES6 react-router Import": {
     "prefix": "imrr",
     "body": [
@@ -476,7 +481,6 @@
     "prefix": "navlink",
     "body": "<NavLink to={${1:path}}>{$anchorText}</NavLink>\n"
   },
-  // comment block
   "Comment Block": {
     "prefix": "cmmb",
     "body": [
