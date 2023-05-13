@@ -1,8 +1,8 @@
-# React/Redux/react-router Snippets [![CircleCI](https://circleci.com/gh/discountry/vscode-react-redux-react-router-snippets.png?&style=shield&circle-token=572ffbb6a4170d0bb2154f940380cf5a0a855dc0)](https://circleci.com/gh/discountry/vscode-react-redux-react-router-snippets/tree/master)
+# React/Redux/react-router Snippets [![CircleCI](https://circleci.com/gh/discountry/vscode-react-redux-react-router-snippets.png?&style=shield&circle-token=4990f08c5270b362bff93b456ff0df4ec4d62796)](https://circleci.com/gh/discountry/vscode-react-redux-react-router-snippets/tree/master)
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
-[![Install](https://vsmarketplacebadge.apphb.com/installs/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
+[![Version](https://vsmarketplacebadges.dev/version/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
+[![Install](https://vsmarketplacebadges.dev/installs/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
+[![Ratings](https://vsmarketplacebadges.dev/rating-short/discountry.react-redux-react-router-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=discountry.react-redux-react-router-snippets)
 
 Useful React Ecosystem snippets for [Visual Studio Code](https://code.visualstudio.com/), including:
 
